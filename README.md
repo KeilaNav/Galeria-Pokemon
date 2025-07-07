@@ -1,4 +1,5 @@
 Contenido y funcionalidades principales
+
 Buscador
 Un campo para buscar Pokémon por nombre en tiempo real.
 A medida que escribís, la galería se actualiza automáticamente mostrando coincidencias.
@@ -24,3 +25,9 @@ Muestra la imagen oficial más grande.
 Muestra la frase “¡Yo te elijo!”.
 Incluye un botón que lleva a la ficha oficial del Pokémon en WikiDex.
 Se reproduce un sonido de selección Pokémon.
+
+Cómo funciona
+Se conecta en tiempo real a la PokeAPI, que provee los datos actualizados de los Pokémon.
+Usa JavaScript para hacer las peticiones, mostrar tarjetas, aplicar filtros, abrir el modal y reproducir sonido.
+Usa CSS personalizado para los efectos visuales (flip, luces neón, sombreado, animaciones).
+Todo el contenido se carga dinámicamente, sin necesidad de recargar la página.
