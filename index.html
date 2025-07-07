@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galería Pokémon 🐾</title>
+  <link rel="stylesheet" href="proyectfour.css" />
+  <link rel="icon" href="icono.png">
+</head>
+<body>
+  <header>
+    <h1>Galería Pokémon 🐾</h1>
+    <input id="buscador" type="text" placeholder="Buscar Pokémon..." aria-label="Buscar Pokémon" />
+    <select id="filtroTipo" aria-label="Filtrar por tipo">
+      <option value="">Todos los tipos</option>
+      <option value="normal">Normal</option>
+      <option value="fighting">Lucha</option>
+      <option value="flying">Volador</option>
+      <option value="poison">Veneno</option>
+      <option value="ground">Tierra</option>
+      <option value="rock">Roca</option>
+      <option value="bug">Bicho</option>
+      <option value="ghost">Fantasma</option>
+      <option value="steel">Acero</option>
+      <option value="fire">Fuego</option>
+      <option value="water">Agua</option>
+      <option value="grass">Planta</option>
+      <option value="electric">Eléctrico</option>
+      <option value="psychic">Psíquico</option>
+      <option value="ice">Hielo</option>
+      <option value="dragon">Dragón</option>
+      <option value="dark">Siniestro</option>
+      <option value="fairy">Hada</option>
+      <option value="unknown">Desconocido</option>
+      <option value="shadow">Sombra</option>
+    </select>
+  </header>
+
+  <main id="galeria" class="galeria" role="list"></main>
+  <button id="btnCargarMas" aria-label="Cargar más Pokémon">Cargar más Pokémon</button>
+
+  <!-- Modal -->
+  <div id="modal" class="modal oculto" role="dialog" aria-modal="true">
+    <div class="modal-contenido">
+      <img id="modalImagen" src="" alt="Pokémon elegido" />
+      <h2 id="modalNombre"></h2>
+      <p class="frase">¡Yo te elijo!</p>
+      <a id="fichaLink" href="#" target="_blank" rel="noopener noreferrer">
+        <button id="verFicha">Ver ficha</button>
+      </a>
+      <button id="cerrarModal">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Audio -->
+  <audio id="audioPokemon" src="pokemon-theme.mp3" preload="auto"></audio>
+
+  <script src="proyectfour.js"></script>
+</body>
+</html>
